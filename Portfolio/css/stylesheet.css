@@ -1,0 +1,147 @@
+
+ body{
+ 	position: relative;
+ }
+
+ div {
+	font-family: 'Product Sans', Arial, sans-serif;;
+	position: relative;
+	font-weight: 300;
+}
+
+#collapse span{
+	position:relative;
+	top: 17px;
+}
+
+
+/** Header Navigation **/
+header .navbar{
+	transition: all .5s ease-out;
+	padding: -20px, 0;
+}
+
+header .navbar-default{
+	background-color: transparent;
+	border: none;
+}
+
+header .navbar-default .navbar-nav a{
+	color: black;
+	padding: 15px 8px;
+	font-size: 15px;
+}
+
+header .navbar-default .navbar-nav a:hover {
+	font-weight: 100;
+	text-decoration: underline;
+}
+
+header .navbar-default .navbar-nav .active a{
+	font-weight: 700;
+	color: red;
+	background: transparent;
+	border-bottom: 4px solid black;
+	text-shadow: none;
+}
+
+header .navbar-default .navbar-nav .active a:hover{
+	font-weight: 100;
+	text-decoration: underline;
+}
+
+
+/** Navbar Brand **/ 
+header .navbar-brand h1{
+	color: black;
+	margin: 0;
+	font-size: 1.8em;
+	font-weight: 700;
+}
+
+
+/** Navbar toggle */
+header .navbar-toggle{
+	background-color: #99ccff;
+}
+
+header .navbar-default .navbar-toggle .icon-bar{
+	background-color: white;
+}
+
+header .navbar-collapse {
+	background-color: rgba(0,0,0, 0);
+}
+
+/** nav inbody **/
+header .inbody {
+	background-color : rgba(153, 204, 255, 0.9);
+}
+
+header .navbar.inbody .navbar-nav{
+   padding-top: 100;
+   padding-bottom: 100;
+}
+
+
+/** Carousel Fade */
+.carousel.fade {
+    opacity: 1;
+}
+
+.carousel.fade .item {
+    transition: opacity ease-out .7s;
+    left: 0;
+    opacity: 0;
+    top: 0;
+    position: absolute;
+    width: 100%;
+    display: block;
+}
+
+.carousel.fade .item:first-child {
+    top: auto;
+    opacity: 1;
+    position: relative;
+}
+
+.carousel.fade .item.active {
+    opacity: 1;
+}
+
+.carousel-control {
+    opacity: 0;
+}
+
+.carousel-control.right
+.carousel-control.left {
+    background-image: none;
+}
+
+#HomeC .item{
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	width: 100%;
+	height: 100%;
+}
+
+/** About Page **/ 
+.page {
+    padding: 50px 0;
+    text-align: left;
+}
+
+@media only screen
+and (min-width: 450px)
+and (max-width: 768px){
+	.page p {
+		padding: 0 20%;
+	}
+}
+
+/** Footer Navigation **/
+footer .navbar-default{
+	background: transparent;
+}
+
